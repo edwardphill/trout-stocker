@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Trout Stocking Map: Tennessee and Georgia trout stocking schedules</title>
+<!--SEO_HEAD-->
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+<style>
+/*STYLE*/
+/* This site */
+[hidden]{display:none!important}
+header.site{border-bottom:1px solid var(--hair)}
+.site-in{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:16px 24px;padding-block:30px 22px}
+.site h1{font-size:clamp(1.8rem,5vw,2.5rem);line-height:1.1;letter-spacing:-.025em;font-weight:700}
+.site .kicker{color:var(--green)}
+.site .sub{color:var(--muted);max-width:56ch;margin-top:6px}
+.switch{display:inline-flex;border:1px solid var(--hair);border-radius:10px;padding:3px;background:var(--paper);gap:2px}
+.switch button{border:0;background:none;padding:9px 16px;border-radius:7px;font:500 .92rem/1 var(--sans);color:var(--muted);cursor:pointer}
+.switch button[aria-pressed="true"]{background:var(--deep);color:#fff}
+@media (hover:hover){.switch button[aria-pressed="false"]:hover{color:var(--ink);background:var(--ground)}}
+.view-h{margin-bottom:-8px}
+footer.site-foot{max-width:1000px;margin:8px auto 40px;padding:20px 16px 0;border-top:1px solid var(--hair);color:var(--muted);font-size:.88rem;display:grid;gap:6px;text-align:center}
+footer.site-foot a{color:var(--green)}
+#crawl{display:none}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="wrap site-in">
+    <div>
+      <p class="kicker">Tennessee · Georgia</p>
+      <h1>Trout Stocking Map</h1>
+      <p class="sub">Every stocked trout water on one map, from the state schedules and reports. Open to everyone, no sign-in.</p>
+    </div>
+    <div class="switch" role="group" aria-label="State">
+      <button type="button" data-sksa="TN" aria-pressed="true">Tennessee</button>
+      <button type="button" data-sksa="GA" aria-pressed="false">Georgia</button>
+    </div>
+  </div>
+</header>
+
+<main class="wrap" id="v-stocking">
+  <div class="tm">
+<!--MARKUP-->
+  </div>
+</main>
+
+<footer class="site-foot">
+  <p>Schedules from <a href="https://www.tn.gov/twra/fishing/trout-information-stockings.html" target="_blank" rel="noopener">TWRA</a> and <a href="https://georgiawildlife.com/fishing/trout" target="_blank" rel="noopener">Georgia WRD</a>. Not affiliated with either agency; stockings move with weather and water, so check with the state before you drive.</p>
+  <p>Planning a trip? <a href="/*FLY_AI*//plan" rel="noopener">Ask the trip planner</a> · <a href="/*FLY_AI*//picker" rel="noopener">Fly Picker</a> · <a href="/*FLY_AI*//" rel="noopener">Start an anglers club</a></p>
+</footer>
+
+<!--CRAWL-->
+
+<dialog class="sheet" id="sheet" aria-label="Details"><div class="sh" id="sheet-body"></div></dialog>
+<div id="toast" role="status" aria-live="polite"></div>
+
+<script>window.SITE = /*SITE*/;
+window.GENERATION = /*GENERATION*/;</script>
+<script>
+(() => {
+"use strict";
+/*TENNESSEE*/
+/*GEORGIA*/
+/*MAIN*/
+})();
+</script>
+</body>
+</html>

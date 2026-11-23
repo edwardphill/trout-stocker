@@ -1,0 +1,17 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": null,
+  "buildCommand": "npm run build",
+  "outputDirectory": "public",
+  "rewrites": [
+    { "source": "/tennessee", "destination": "/index.html" },
+    { "source": "/georgia", "destination": "/index.html" }
+  ],
+  "functions": {
+    "api/stocking.js": { "maxDuration": 60, "includeFiles": "data/stocking-ga.json" }
+  },
+  "crons": [
+    { "path": "/api/health", "schedule": "17 11 * * *" },
+    { "path": "/api/stocking?refresh=1", "schedule": "43 12 * * *" }
+  ]
+}

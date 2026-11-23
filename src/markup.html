@@ -1,0 +1,79 @@
+          <p class="tm-lede" data-st="TN" id="sk-lede">The state's trout stocking schedule, with every stocked water on one map. Tap a water to see its dates.</p>
+          <div class="tm-score" data-st="TN" id="sk-score"></div>
+          <div data-st="TN">
+            <div class="tm-map" id="sk-map">
+              <div class="tm-loading sk-loading" id="sk-map-msg">Loading the schedule…</div>
+              <div class="tm-ctl" id="sk-ctl" hidden>
+                <button class="icon-btn" type="button" data-act="sk-zin" aria-label="Zoom in">+</button>
+                <button class="icon-btn" type="button" data-act="sk-zout" aria-label="Zoom out">−</button>
+                <button class="icon-btn world" type="button" data-act="sk-all" aria-label="Show the whole state">ALL</button>
+              </div>
+              <div class="tm-tip" id="sk-tip" hidden></div>
+            </div>
+            <div class="tm-foot"><div class="tm-legend" id="sk-legend" aria-label="Map key"></div></div>
+            <p class="tm-note" id="sk-note"></p>
+          </div>
+          <section data-st="TN">
+            <div class="tm-sec-h"><h2>Coming up</h2><span class="hint" id="sk-count"></span></div>
+            <div class="sk-filters">
+              <input class="tm-search" id="sk-q" type="search" placeholder="Find a water or county" aria-label="Find a water or county" autocomplete="off">
+              <label class="sk-when">When
+                <select id="sk-when">
+                  <option value="7">Next 7 days</option>
+                  <option value="30">Next 30 days</option>
+                  <option value="upcoming" selected>Anything coming up</option>
+                  <option value="all">The whole season</option>
+                </select></label>
+              <div class="chips" role="group" aria-label="Sort">
+                <button class="chip" type="button" data-sks="soon" aria-pressed="true">Soonest</button>
+                <button class="chip" type="button" data-sks="near" aria-pressed="false">Nearest</button>
+              </div>
+            </div>
+            <div class="sk-filters">
+              <div class="chips" id="sk-regions" role="group" aria-label="Region"></div>
+              <div class="chips" id="sk-types" role="group" aria-label="Water type"></div>
+            </div>
+            <ul class="rows" id="sk-list"></ul>
+          </section>
+          <p class="tm-lede" data-st="GA" id="ga-lede" hidden></p>
+          <div class="tm-score" data-st="GA" id="ga-score" hidden></div>
+          <div data-st="GA" hidden>
+            <div class="tm-map" id="ga-map">
+              <div class="tm-loading sk-loading" id="ga-map-msg">Loading the schedule…</div>
+              <div class="tm-ctl" id="ga-ctl" hidden>
+                <button class="icon-btn" type="button" data-act="ga-zin" aria-label="Zoom in">+</button>
+                <button class="icon-btn" type="button" data-act="ga-zout" aria-label="Zoom out">−</button>
+                <button class="icon-btn world" type="button" data-act="ga-all" aria-label="Show all of north Georgia">ALL</button>
+              </div>
+              <div class="tm-tip" id="ga-tip" hidden></div>
+            </div>
+            <div class="tm-foot"><div class="tm-legend" id="ga-legend" aria-label="Map key"></div></div>
+            <p class="tm-note" id="ga-note"></p>
+          </div>
+          <section data-st="GA" hidden>
+            <div class="tm-sec-h"><h2>Stocked recently</h2><span class="hint" id="ga-evcount"></span></div>
+            <div class="sk-filters">
+              <input class="tm-search" id="ga-q" type="search" placeholder="Find a water or county" aria-label="Find a water or county" autocomplete="off">
+              <label class="sk-when">When
+                <select id="ga-when">
+                  <option value="7">Last 7 days</option>
+                  <option value="30" selected>Last 30 days</option>
+                  <option value="all">Everything reported</option>
+                </select></label>
+              <div class="chips" id="ga-kinds" role="group" aria-label="Kind of stocking"></div>
+            </div>
+            <div id="ga-county"></div>
+            <ul class="rows" id="ga-evlist"></ul>
+          </section>
+          <section data-st="GA" hidden>
+            <div class="tm-sec-h"><h2>How often each water is stocked</h2><span class="hint" id="ga-count"></span></div>
+            <p class="tm-note" id="ga-freqnote"></p>
+            <div class="sk-filters">
+              <div class="chips" role="group" aria-label="Sort">
+                <button class="chip" type="button" data-gas="freq" aria-pressed="true">By frequency</button>
+                <button class="chip" type="button" data-gas="az" aria-pressed="false">A to Z</button>
+              </div>
+              <div class="chips" id="ga-groups" role="group" aria-label="How often"></div>
+            </div>
+            <ul class="rows" id="ga-list"></ul>
+          </section>

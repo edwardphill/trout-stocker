@@ -1,0 +1,16 @@
+{
+  "name": "trout-stocking",
+  "private": true,
+  "type": "module",
+  "description": "Tennessee and Georgia trout stocking map.",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "test": "npm run build && node tests/stocking-ga.test.mjs && node tests/site.test.mjs && node tests/gastock.test.mjs"
+  },
+  "dependencies": {
+    "postgres": "^3.4.5"
+  },
+  "engines": {
+    "node": "22.x"
+  }
+}
